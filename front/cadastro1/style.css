@@ -1,0 +1,35 @@
+
+ .imagem-canto {
+     padding: 15px;
+     width: 120px;
+     height: 120px;
+ }
+
+ .quadrado {
+     width: 100%;
+     height: 200px;
+     background-color: rgb(40, 125, 182);
+     display: flex;
+    flex-direction: row;
+
+ }
+ body{
+    margin: 0;
+    padding: 0; 
+ }
+
+.nomecol{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+}
+
+.content{
+color:rgb(0, 0, 0)
+
+}
+
+.formulario{
+    flex-direction: 
+display: flex
+
+}
