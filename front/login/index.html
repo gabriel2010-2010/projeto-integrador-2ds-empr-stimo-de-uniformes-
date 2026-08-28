@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Login e Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho / Menu de Navegação -->
+    <header class="navbar">
+        <div class="logo">MinhaLogo</div>
+        <nav>
+            <a href="#" class="nav-link">Início</a>
+            <a href="#" class="nav-link">Sobre</a>
+            <button class="btn nav-btn" onclick="openModal('loginModal')">Entrar</button>
+            <button class="btn btn-primary nav-btn" onclick="openModal('registerModal')">Cadastrar</button>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal da Home -->
+    <main class="hero-section">
+        <h1>Bem-vindo à Nossa Plataforma</h1>
+        <p>Conecte-se para acessar os melhores recursos e ferramentas do mercado.</p>
+        <div class="hero-buttons">
+            <button class="btn btn-primary btn-large" onclick="openModal('registerModal')">Começar Agora</button>
+        </div>
+    </main>
+
+    <!-- Janela Modal de Login -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Acessar Conta</h2>
+            <form>
+                <div class="form-group">
+                    <label for="login-email">E-mail</label>
+                    <input type="email" id="login-email" placeholder="Seu e-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Senha</label>
+                    <input type="password" id="login-password" placeholder="Sua senha" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+            </form>
+            <p class="modal-footer">Não tem conta? <a href="#" onclick="switchModal('loginModal', 'registerModal')">Cadastre-se</a></p>
+        </div>
+    </div>
+
+    <!-- Janela Modal de Cadastro -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('registerModal')">&times;</span>
+            <h2>Criar Conta</h2>
+            <form>
+                <div class="form-group">
+                    <label for="reg-name">Nome Completo</label>
+                    <input type="text" id="reg-name" placeholder="Seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-email">E-mail</label>
+                    <input type="email" id="reg-email" placeholder="Seu melhor e-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-password">Senha</label>
+                    <input type="password" id="reg-password" placeholder="Crie uma senha" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Registrar</button>
+            </form>
+            <p class="modal-footer">Já tem conta? <a href="#" onclick="switchModal('registerModal', 'loginModal')">Faça Login</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
