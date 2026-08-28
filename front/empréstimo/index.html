@@ -1,57 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tela de Login</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      margin: 0;
-      padding: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empréstimo de Uniforme</title>
+    <style>
+        body {
+            background-color: #1a4fa0; /* Tom de azul aproximado da imagem */
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+        }
 
-    .caixa {
-      width: 300px;
-      margin: 80px auto;
-      background-color: white;
-      padding: 24px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
 
-    h1 {
-      text-align: center;
-      color: #333;
-    }
+        .subtitle {
+            font-size: 14px;
+            color: #b0c4de;
+            margin-bottom: 30px;
+        }
 
-    input, button {
-      width: 100%;
-      padding: 10px;
-      margin-top: 8px;
-      margin-bottom: 12px;
-      box-sizing: border-box;
-    }
+        h2 {
+            font-size: 20px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
 
-    button {
-      background-color: #2b6cb0;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
+        .form-group {
+            margin-bottom: 15px;
+        }
 
-    button:hover {
-      background-color: #245a92;
-    }
-  </style>
+        label {
+            display: inline-block;
+            width: 120px;
+            font-size: 16px;
+        }
+
+        input[type="text"], select {
+            width: 250px;
+            padding: 8px;
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .btn-enviar {
+            background-color: #ffffff;
+            color: #1a4fa0;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn-enviar:hover {
+            background-color: #e0e0e0;
+        }
+
+        .instrucao {
+            font-size: 14px;
+            color: #b0c4de;
+            margin-top: 15px;
+        }
+
+        .teste {
+            font-size: 12px;
+            color: #8da4c4;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
-  <div class="caixa">
-    <h1>Entrar</h1>
-    <input type="email" placeholder="E-mail">
-    <input type="password" placeholder="Senha">
-    <button>Login</button>
-  </div>
+
+    <h1>Empréstimo de Uniforme</h1>
+    <div class="subtitle">Peça seu uniforme</div>
+
+    <h2>Faça seu pedido</h2>
+    
+    <div class="form-group">
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome">
+    </div>
+
+    <div class="form-group">
+        <label for="cgm">CGM:</label>
+        <input type="text" id="cgm" name="cgm">
+    </div>
+
+    <div class="form-group">
+        <label for="turma">Turma:</label>
+        <input type="text" id="turma" name="turma">
+    </div>
+
+    <h2>Escolha o que você precisa</h2>
+    <div class="form-group">
+        <label for="peca">CALÇA OU CAMISETA</label><br><br>
+        <select id="peca" name="peca">
+            <option value="">Selecione uma opção...</option>
+            <option value="calca">Calça</option>
+            <option value="camiseta">Camiseta</option>
+            <option value="ambos">Ambos</option>
+        </select>
+    </div>
+
+    <h2>Para finalizar clique no botão</h2>
+    <button class="btn-enviar" type="submit">Enviar Pedido</button>
+
+    <div class="instrucao">Agora vá pegar na Direção Auxiliar</div>
+    
+    <div class="teste">teste 2</div>
+
 </body>
 </html>
+
