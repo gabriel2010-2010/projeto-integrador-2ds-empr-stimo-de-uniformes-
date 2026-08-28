@@ -20,31 +20,33 @@
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWS1uJTf5OjKlNrkb-NE9UJDOWiEjsYD9uTA&s"
             alt="Logotipo do Colégio Estadual do Paraná" class="imagem-canto">
 
-        <p class="nomecol">COLÉGIO ESTADUAL DO PARANÁ</p>
+        <p class="nomecol">COLÉGIO ESTADUAL DO PARANÁ EMPRÉSTIMO DE UNIFORMES</p>
     </div>
-    <div class="content">
-        <h1>CADASTRO DO ALUNO</h1>
-        <p>COLOQUE SEU CGM</p>
-    </div>
-    <div class="formulario">
+  <div class="content">
+    <form action="action_page.php" method="post">
+  <div class="imgcontainer">
+   
+  </div>
 
-        <span class="material-symbols-outlined">
-            circle
-        </span>
-        <input type="text" id="fname" name="fname">
-        <span class="material-symbols-outlined">
-            circle
-        </span>
-        <input type="text" id="fname" name="fname">
-        <span class="material-symbols-outlined">
-            circle
-        </span>
-        <input type="text" id="fname" name="fname">
-        <span class="material-symbols-outlined">
-            circle
-        </span>
-        <input type="text" id="fname" name="fname">
-    </div>
+  <div class="container">
+    <label for="uname"><b>nome</b></label>
+    <input type="text" placeholder="nome completo" name="uname" required>
+
+    <label for="psw"><b>cgm</b></label>
+    <input type="password" placeholder="Coloque seu CGM" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> criar cadastro 
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancelar</button>
+    <span class="psw">Esqueceu o <a href="#">CGM?</a></span>
+  </div>
+</form>
+  </div>
 </body>
 
 </html>

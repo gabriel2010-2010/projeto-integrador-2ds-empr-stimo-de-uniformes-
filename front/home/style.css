@@ -1,35 +1,49 @@
 
  .imagem-canto {
      padding: 15px;
-     width: 120px;
+flex: 0.1;
      height: 120px;
  }
 
  .quadrado {
      width: 100%;
-     height: 200px;
-     background-color: rgb(40, 125, 182);
      display: flex;
-    flex-direction: row;
-
- }
- body{
+     flex-direction: row;
+     
+    }
+    body{
+     background-color: rgba(0, 61, 117, 0.795);
     margin: 0;
     padding: 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
  }
 
 .nomecol{
     color: rgb(0, 0, 0);
     font-size: 50px;
+    justify-content: center;
+    display: flex;
+    flex: 0.9;
+    flex-direction: row;
+
 }
 
 .content{
-color:rgb(0, 0, 0)
-
+width: 300px;
+height: 300px;
+background-color: rgb(20, 76, 160);
+border: solid 10px rgb(12, 12, 12);
+margin: 50px;
+padding: 10px;
+border-radius: 40px;
 }
 
 .formulario{
-    flex-direction: 
-display: flex
+    flex-direction: column;
+display: flex;
 
 }
+
